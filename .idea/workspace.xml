@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/world.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannel.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +60,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioFileChannelCopy">
+  <component name="RunManager" selected="Application.NioByteBuffer">
+    <configuration name="NioByteBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.nio.NioByteBuffer" />
+      <module name="nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lx.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NioFileChannelBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lx.nio.NioFileChannelBasic" />
       <module name="nio" />
@@ -96,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NioByteBuffer" />
         <item itemvalue="Application.NioFileChannelCopy" />
         <item itemvalue="Application.NioFileChannelBasic" />
       </list>
@@ -111,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594308076530</updated>
-      <workItem from="1594308079376" duration="3329000" />
+      <workItem from="1594308079376" duration="4393000" />
     </task>
     <servers />
   </component>
