@@ -12,7 +12,7 @@ public class NioFileChannelBasic {
     public static void main(String[] args) throws IOException {
 //        writeToFile();
 //        readFromFile();
-    readAndWrite();
+        readAndWrite();
     }
 
     /**
@@ -78,7 +78,7 @@ public class NioFileChannelBasic {
             byteBuffer.clear();
             // 读取buffer
             int read = channel.read(byteBuffer);
-            System.out.println("read: "+ read);
+            System.out.println("read: " + read);
             // 读完buffer
             if (read == -1) {
                 break;

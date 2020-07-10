@@ -21,6 +21,8 @@ public class NioFileChannelCopy {
         destCh.transferFrom(sourceCh,0,sourceCh.size());
         fileInputStream.close();
         fileOutputStream.close();
+
+
     }
 
 

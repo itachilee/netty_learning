@@ -46,8 +46,8 @@ public class NioByteBuffer {
             // buffer's position automatically plus 1 by get()
             System.out.println(readOnlyBuffer.get());
         }
-//java.nio.ReadOnlyBufferException
+        // java.nio.ReadOnlyBufferException
         // can't write a readonly buffer
-//        readOnlyBuffer.put((byte)12);
+        // readOnlyBuffer.put((byte)12);
     }
 }

@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="nio" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -39,6 +50,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,7 +74,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioByteBuffer">
+  <component name="RunManager" selected="Application.AioClient">
+    <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.aio.AioClient" />
+      <module name="nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lx.aio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.aio.AioServer" />
+      <module name="nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lx.aio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NioByteBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lx.nio.NioByteBuffer" />
       <module name="nio" />
@@ -102,6 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AioClient" />
+        <item itemvalue="Application.AioServer" />
         <item itemvalue="Application.NioByteBuffer" />
         <item itemvalue="Application.NioFileChannelCopy" />
         <item itemvalue="Application.NioFileChannelBasic" />
@@ -118,7 +160,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594308076530</updated>
-      <workItem from="1594308079376" duration="4393000" />
+      <workItem from="1594308079376" duration="4842000" />
+      <workItem from="1594343540687" duration="52000" />
+      <workItem from="1594369426269" duration="713000" />
+      <workItem from="1594372142069" duration="3921000" />
     </task>
     <servers />
   </component>
@@ -130,7 +175,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -138,5 +185,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
