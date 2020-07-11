@@ -37,17 +37,6 @@ public class AioServer {
             server.accept(null, new CompletionHandler<AsynchronousSocketChannel, Object>() {
 
 
-                /**
-                 * Invoked when an operation fails.
-                 *
-                 * @param exc        The exception to indicate why the I/O operation failed
-                 * @param attachment
-                 */
-                @Override
-                public void failed(Throwable exc, Object attachment) {
-                    System.out.println(exc.toString());
-                }
-
                 // 创建缓存区
                 final ByteBuffer buffer = ByteBuffer.allocate(1024);
 
@@ -57,6 +46,7 @@ public class AioServer {
                  * @param result     The result of the I/O operation.
                  * @param attachment
                  */
+
 
                 @Override
                 public void completed(AsynchronousSocketChannel result, Object attachment) {
@@ -83,6 +73,17 @@ public class AioServer {
                         }
                     }
                     System.out.println("操作完成");
+                }
+
+                /**
+                 * Invoked when an operation fails.
+                 *
+                 * @param exc        The exception to indicate why the I/O operation failed
+                 * @param attachment
+                 */
+                @Override
+                public void failed(Throwable exc, Object attachment) {
+                    System.out.println(exc.toString());
                 }
 
             });

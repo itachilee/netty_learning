@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/buffer/BufferSlice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioByteBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/aio/AioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +165,9 @@
       <workItem from="1594308079376" duration="4842000" />
       <workItem from="1594343540687" duration="52000" />
       <workItem from="1594369426269" duration="713000" />
-      <workItem from="1594372142069" duration="3921000" />
+      <workItem from="1594372142069" duration="4596000" />
+      <workItem from="1594376883484" duration="2492000" />
+      <workItem from="1594463941969" duration="460000" />
     </task>
     <servers />
   </component>
@@ -185,16 +189,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/aio/AioClient.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

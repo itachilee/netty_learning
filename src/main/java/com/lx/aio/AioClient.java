@@ -28,6 +28,10 @@ public class AioClient {
             @Override
             public void completed(Void result, Void attachment) {
                 try {
+//                    ByteBuffer byteBuffer = ByteBuffer.allocate(64);
+//                    for (int i = 0; i < byteBuffer.capacity(); i++) {
+//                        byteBuffer.put((byte) i);
+//                    }
                     client.write(ByteBuffer.wrap("this is a test msg".getBytes())).get();
                     System.out.println("send to server!");
                 } catch (Exception e) {
