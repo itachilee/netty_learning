@@ -2,14 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/buffer/ScatterAndGather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/EchoClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/EchoServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NIOServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/buffer/BufferReadonly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/buffer/BufferReadonly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferReadonly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferReadonly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferSlice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferSlice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioByteBuffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/nio/NioByteBuffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelBasic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelCopy.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="nio" />
@@ -44,6 +79,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -69,13 +110,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BufferReadonly">
-    <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.aio.AioClient" />
+  <component name="RunManager" selected="Application.DiscardServer">
+    <configuration name="DiscardServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.netty.DiscardServer" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.aio.*" />
+          <option name="PATTERN" value="com.lx.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.aio.AioServer" />
+    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.nio.EchoClient" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.aio.*" />
+          <option name="PATTERN" value="com.lx.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +137,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferReadonly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.buffer.BufferReadonly" />
+    <configuration name="NIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.nio.NIOClient" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.buffer.*" />
+          <option name="PATTERN" value="com.lx.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.nio.NIOServer" />
+      <module name="nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lx.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,26 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioFileChannelCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.nio.NioFileChannelCopy" />
-      <module name="nio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lx.nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BufferReadonly" />
-        <item itemvalue="Application.AioClient" />
-        <item itemvalue="Application.AioServer" />
+        <item itemvalue="Application.DiscardServer" />
+        <item itemvalue="Application.EchoClient" />
+        <item itemvalue="Application.NIOClient" />
+        <item itemvalue="Application.NIOServer" />
         <item itemvalue="Application.NioByteBuffer" />
-        <item itemvalue="Application.NioFileChannelCopy" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +201,12 @@
       <workItem from="1594369426269" duration="713000" />
       <workItem from="1594372142069" duration="4596000" />
       <workItem from="1594376883484" duration="2492000" />
-      <workItem from="1594463941969" duration="1474000" />
+      <workItem from="1594463941969" duration="7657000" />
+      <workItem from="1594602347637" duration="1357000" />
+      <workItem from="1594688431142" duration="431000" />
+      <workItem from="1595057021053" duration="3047000" />
+      <workItem from="1595209011523" duration="17000" />
+      <workItem from="1595217038460" duration="1091000" />
     </task>
     <servers />
   </component>
@@ -182,5 +228,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/nio/NIOServer.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
