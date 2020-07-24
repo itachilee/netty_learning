@@ -1,6 +1,6 @@
-package com.lx.nettyprc.provider;
+package com.lx.prc.provider;
 
-import com.lx.nettyprc.api.IRpcService;
+import com.lx.prc.api.IRpcService;
 
 /**
  * @author leon

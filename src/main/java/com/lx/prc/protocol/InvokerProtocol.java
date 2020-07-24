@@ -1,4 +1,4 @@
-package com.lx.nettyprc.protocol;
+package com.lx.prc.protocol;
 
 import lombok.Data;
 

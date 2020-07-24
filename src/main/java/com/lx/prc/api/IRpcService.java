@@ -1,4 +1,4 @@
-package com.lx.nettyprc.api;
+package com.lx.prc.api;
 
 public interface IRpcService {
     /**

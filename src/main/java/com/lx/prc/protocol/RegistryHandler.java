@@ -1,4 +1,4 @@
-package com.lx.nettyprc.protocol;
+package com.lx.prc.protocol;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -20,7 +20,7 @@ public class RegistryHandler extends ChannelInboundHandlerAdapter {
     private List<String> classNames = new ArrayList<>(10);
 
     public RegistryHandler() {
-        scannerClass("com.lx.nettyprc.provider");
+        scannerClass("com.lx.prc.provider");
         doRegister();
     }
 
@@ -28,10 +28,10 @@ public class RegistryHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         Object result = new Object();
         InvokerProtocol request = (InvokerProtocol) msg;
-        if (registryMap.containsKey(request.getClassName())){
-            Object clazz =registryMap.get(request.getClassName());
-            Method method =clazz.getClass().getMethod(request.getMethodName(),request.getParames());
-            result =method.invoke(clazz,request.getValues());
+        if (registryMap.containsKey(request.getClassName())) {
+            Object clazz = registryMap.get(request.getClassName());
+            Method method = clazz.getClass().getMethod(request.getMethodName(), request.getParames());
+            result = method.invoke(clazz, request.getValues());
         }
         ctx.writeAndFlush(result);
         ctx.close();
@@ -46,32 +46,34 @@ public class RegistryHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 扫描
+     *
      * @param packageName
      */
-    public void scannerClass(String packageName){
-        URL url =this.getClass().getClassLoader().getResource(packageName.replace("\\.","/"));
-        File dir =new File(url.getFile());
+    public void scannerClass(String packageName) {
+        String newPackageName =packageName.replace(".","/");
+        URL url = this.getClass().getClassLoader().getResource(newPackageName);
+        File dir = new File(url.getFile());
 
-        for (File file : dir.listFiles()){
+        for (File file : dir.listFiles()) {
             // -r
-            if (file.isDirectory()){
-                scannerClass(packageName+"."+file.getName());
-            }else {
-                classNames.add(packageName+"."+file.getName().replace(".class","").trim());
+            if (file.isDirectory()) {
+                scannerClass(packageName + "." + file.getName());
+            } else {
+                classNames.add(packageName + "." + file.getName().replace(".class", "").trim());
             }
         }
     }
 
-    private void doRegister(){
-        if (classNames.size() == 0){
+    private void doRegister() {
+        if (classNames.size() == 0) {
             return;
         }
-        for (String className :classNames){
+        for (String className : classNames) {
             try {
-                Class<?> clazz =Class.forName(className);
-                Class<?> i =clazz.getInterfaces()[0];
-                registryMap.put(i.getName(),clazz.newInstance());
-            } catch (Exception e){
+                Class<?> clazz = Class.forName(className);
+                Class<?> i = clazz.getInterfaces()[0];
+                registryMap.put(i.getName(), clazz.newInstance());
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
