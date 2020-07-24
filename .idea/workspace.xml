@@ -2,12 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/buffer/AccessBuf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/buffer/ByteBufAllocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/buffer/ByteBufHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/transport/NettyNioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/transport/NettyOioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/transport/PlainNioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/transport/PlainOioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/api/IRpcHelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/api/IRpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/protocol/InvokerProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/protocol/RegistryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/provider/RpcHelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/provider/RpcServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/register/RpcRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/nio/NioFileChannelCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/DiscardServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/DiscardServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/EchoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/EchoClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/netty/EchoServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/netty2learn/EchoServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/aio/AioServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferReadonly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/buffer/BufferSlice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/buffer/ScatterAndGather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/DiscardServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/DiscardServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/DiscardServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/netty/EchoServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/EchoServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NIOClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NIOServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelBasic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nio/NioFileChannelCopy.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +78,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -93,13 +137,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EchoClient (1)">
-    <configuration name="DiscardServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty.DiscardServer" />
+  <component name="RunManager" selected="Application.RpcRegister">
+    <configuration name="AccessBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.buffer.AccessBuf" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.netty.*" />
+          <option name="PATTERN" value="com.lx.netty2learn.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EchoClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty.EchoClient" />
+    <configuration name="ByteBufAllocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.buffer.ByteBufAllocator" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.netty.*" />
+          <option name="PATTERN" value="com.lx.netty2learn.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +165,11 @@
       </method>
     </configuration>
     <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.nio.EchoClient" />
+      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.EchoClient" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.nio.*" />
+          <option name="PATTERN" value="com.lx.netty2learn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +178,11 @@
       </method>
     </configuration>
     <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty.EchoServer" />
+      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.EchoServer" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.netty.*" />
+          <option name="PATTERN" value="com.lx.netty2learn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioFileChannelCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.nio.NioFileChannelCopy" />
+    <configuration name="RpcRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.nettyprc.register.RpcRegister" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.nio.*" />
+          <option name="PATTERN" value="com.lx.nettyprc.register.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RpcRegister" />
+        <item itemvalue="Application.ByteBufAllocator" />
+        <item itemvalue="Application.AccessBuf" />
         <item itemvalue="Application.EchoClient (1)" />
         <item itemvalue="Application.EchoServer" />
-        <item itemvalue="Application.NioFileChannelCopy" />
-        <item itemvalue="Application.DiscardServer" />
-        <item itemvalue="Application.EchoClient" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +234,9 @@
       <workItem from="1595057021053" duration="3047000" />
       <workItem from="1595209011523" duration="17000" />
       <workItem from="1595217038460" duration="2000000" />
-      <workItem from="1595294350685" duration="2195000" />
+      <workItem from="1595294350685" duration="5722000" />
+      <workItem from="1595482293286" duration="5752000" />
+      <workItem from="1595572424020" duration="3456000" />
     </task>
     <servers />
   </component>
@@ -222,12 +268,12 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty2learn/DiscardServerHandler.java</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty/DiscardServerHandler.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/lx/netty2learn/DiscardServerHandler.java</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
