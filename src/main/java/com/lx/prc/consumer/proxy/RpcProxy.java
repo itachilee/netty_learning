@@ -10,6 +10,7 @@ import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
+import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -20,6 +21,7 @@ import java.lang.reflect.Proxy;
  *
  * @author leon
  */
+@Slf4j
 public class RpcProxy {
 
 
@@ -77,9 +79,20 @@ public class RpcProxy {
                                 pipeline.addLast("encoder", new ObjectEncoder());
                                 pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
                                 pipeline.addLast("handler", consumerHandler);
+                                log.info("As");
                             }
                         });
                 ChannelFuture future = b.connect("localhost", 8088).sync();
+                future.addListener(new ChannelFutureListener() {
+                    @Override
+                    public void operationComplete(ChannelFuture future) throws Exception {
+                        if (future.isSuccess()){
+                            System.out.println("success");
+                        }else {
+                            future.cause().printStackTrace();
+                        }
+                    }
+                });
                 future.channel().writeAndFlush(msg).sync();
                 future.channel().closeFuture().sync();
             } catch (Exception e) {

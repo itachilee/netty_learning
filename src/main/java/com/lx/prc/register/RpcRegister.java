@@ -13,7 +13,9 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
 
-
+/**
+ * @author leon
+ */
 public class RpcRegister {
     private int port;
 
@@ -25,9 +27,9 @@ public class RpcRegister {
     public void start() {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try{
-            ServerBootstrap b=new ServerBootstrap();
-            b.group(bossGroup,workerGroup).
+        try {
+            ServerBootstrap b = new ServerBootstrap();
+            b.group(bossGroup, workerGroup).
                     channel(NioServerSocketChannel.class).
                     childHandler(new ChannelInitializer<SocketChannel>() {
 
@@ -43,19 +45,32 @@ public class RpcRegister {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE,0,4,0,4));
+                            pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
                             pipeline.addLast(new LengthFieldPrepender(4));
-                            pipeline.addLast("encoder",new ObjectEncoder());
-                            pipeline.addLast("decoder",new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
+                            pipeline.addLast("encoder", new ObjectEncoder());
+                            pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
                             pipeline.addLast(new RegistryHandler());
 
                         }
-                    }).option(ChannelOption.SO_BACKLOG,128).childOption(ChannelOption.SO_KEEPALIVE,true);
+                    }).option(ChannelOption.SO_BACKLOG, 128).childOption(ChannelOption.SO_KEEPALIVE, true);
 
-            ChannelFuture future =b.bind(port).sync();
-            System.out.println("Gp rpc registry start listen at "+ port);
+            ChannelFuture future = b.bind(port).sync();
+            future.addListener(new ChannelFutureListener() {
+                @Override
+                public void operationComplete(ChannelFuture future) throws Exception {
+                    {
+                        if (future.isSuccess()) {
+                            System.out.println("success");
+                        } else {
+                            System.out.println("error");
+                            future.cause().printStackTrace();
+                        }
+                    }
+                }
+            });
+            System.out.println("Gp rpc registry start listen at " + port);
             future.channel().closeFuture().sync();
-        }catch (Exception e){
+        } catch (Exception e) {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
@@ -63,5 +78,9 @@ public class RpcRegister {
 
     public static void main(String[] args) {
         new RpcRegister(8088).start();
+//        test("asd","asd");
+    }
+    public static void test(String... string){
+        System.out.println(string[0]);
     }
 }

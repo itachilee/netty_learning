@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9acebc75-2565-49c7-aad5-51ba4f7fba6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/RpcConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/buffer/ByteBufDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/conponment/MyTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/redis/Datagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/redis/RedisJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lx/redis/SimpleInBound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/api/IRpcHelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/api/IRpcHelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/api/IRpcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/api/IRpcService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/protocol/InvokerProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/protocol/InvokerProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/protocol/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/protocol/RegistryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/provider/RpcHelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/provider/RpcHelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/provider/RpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/provider/RpcServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/nettyprc/register/RpcRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/register/RpcRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/api/IRpcHelloService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/api/IRpcService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/protocol/InvokerProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/protocol/RegistryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/provider/RpcHelloServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/provider/RpcServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/register/RpcRegister$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/nettyprc/register/RpcRegister.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/RpcConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/RpcConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/prc/register/RpcRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/prc/register/RpcRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/RpcConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/RpcConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy$MethodProxy$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy$MethodProxy$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy$MethodProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy$MethodProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/consumer/proxy/RpcProxyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/register/RpcRegister$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/register/RpcRegister$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lx/prc/register/RpcRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lx/prc/register/RpcRegister.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/project/svn/甘肃农业灌溉/software/甘肃农业简化版/gsnyBoot" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,10 +87,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\leon\Desktop\netty\nio" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lx.redis" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leon\Desktop\netty\nio" />
     </key>
   </component>
@@ -108,13 +109,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RpcConsumer">
-    <configuration name="AccessBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.buffer.AccessBuf" />
+  <component name="RunManager" selected="Application.Datagram">
+    <configuration name="Datagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.redis.Datagram" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.netty2learn.buffer.*" />
+          <option name="PATTERN" value="com.lx.redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,25 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ByteBufAllocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.buffer.ByteBufAllocator" />
+    <configuration name="MyTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.conponment.MyTimer" />
       <module name="nio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lx.netty2learn.buffer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lx.netty2learn.EchoClient" />
-      <module name="nio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lx.netty2learn.*" />
+          <option name="PATTERN" value="com.lx.conponment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,13 +162,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleInBound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lx.redis.SimpleInBound" />
+      <module name="nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lx.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RpcConsumer" />
+        <item itemvalue="Application.Datagram" />
         <item itemvalue="Application.RpcRegister" />
-        <item itemvalue="Application.ByteBufAllocator" />
-        <item itemvalue="Application.AccessBuf" />
-        <item itemvalue="Application.EchoClient (1)" />
+        <item itemvalue="Application.SimpleInBound" />
+        <item itemvalue="Application.RpcConsumer" />
+        <item itemvalue="Application.MyTimer" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +208,13 @@
       <workItem from="1595217038460" duration="2000000" />
       <workItem from="1595294350685" duration="5722000" />
       <workItem from="1595482293286" duration="5752000" />
-      <workItem from="1595572424020" duration="7553000" />
+      <workItem from="1595572424020" duration="10903000" />
+      <workItem from="1595811901785" duration="7566000" />
+      <workItem from="1595899808116" duration="2160000" />
+      <workItem from="1595902266315" duration="184000" />
+      <workItem from="1596617652806" duration="4671000" />
+      <workItem from="1596790598378" duration="7000" />
+      <workItem from="1597030423303" duration="5422000" />
     </task>
     <servers />
   </component>
@@ -253,27 +260,15 @@
           <line>60</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxyHandler.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxy.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lx/prc/consumer/proxy/RpcProxy.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nio$EchoServer.ic" NAME="EchoServer Coverage Results" MODIFIED="1595296263556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.lx.netty.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/nio$ByteBufDemo.ic" NAME="ByteBufDemo Coverage Results" MODIFIED="1595827861234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lx.buffer.*</FILTER>
     </SUITE>
   </component>
 </project>
